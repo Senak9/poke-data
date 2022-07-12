@@ -4,12 +4,14 @@ import "./index.css";
 import App from "./App";
 import Home from "./pages/home";
 import reportWebVitals from "./reportWebVitals";
+import Pokedex from "./pages/pokedex";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Home />
+    {/* <Home /> */}
+    <Pokedex />
   </React.StrictMode>
 );
 

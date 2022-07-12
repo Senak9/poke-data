@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderIcon from "../../assets/header.svg";
 import "./style.css";
 export default function Header() {
   return (

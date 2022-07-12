@@ -10,12 +10,10 @@ export default function Home() {
       <Header />
       <div className="boxHome">
         <div className="boxCard">
-          <CardType /> <CardType />
+          <CardType status="pokedex" /> <CardType status="evolution" />
+          <CardType status="moves" /> <CardType status="locations" />
         </div>
-        <div className="boxCard">
-          <CardType /> <CardType />
-        </div>
-        <div>
+        <div className="boxPokemon">
           <img src={PokemonHome} alt="PokemonHome" className="pokemonHome" />
         </div>
       </div>

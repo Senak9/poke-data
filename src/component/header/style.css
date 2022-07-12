@@ -12,6 +12,9 @@
   align-items: center;
   justify-content: center;
 }
+.titleHeader {
+  width: 100vw;
+}
 
 .containerHeader h1 {
   font-family: "Pokemon Solid", sans-serif;
@@ -19,7 +22,6 @@
   font-weight: 400;
   font-size: 12rem;
   color: #ffffff;
-
   align-items: center;
 }
 .boxHeader {
