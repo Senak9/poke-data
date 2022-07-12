@@ -7,5 +7,14 @@
 .boxHome {
   background: #d9d9d9;
   border-radius: 25px;
-  margin-top: 10.2rem;
+
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 38.2rem;
+  padding: 4.1rem 10.1rem 4.1rem 10.1rem;
+}
+.boxCard {
+  display: flex;
+  flex-direction: column;
 }
