@@ -5,9 +5,7 @@
 
   display: flex;
   align-items: center;
-  padding: 2rem 4rem 2rem 4rem;
-  margin-right: 7.1rem;
-  margin-bottom: 4rem;
+  padding: 2rem 4rem;
 }
 
 .pokedexBox {

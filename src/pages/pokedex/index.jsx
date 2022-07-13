@@ -34,16 +34,19 @@ export default function Pokedex() {
     <div className="containerPokedex">
       <Header />
       <div className="boxPokedex">
-        {pokemonsList &&
-          pokemonsList.map((pokemon) => {
-            return (
-              <PokemonCard
-                id={pokemon.id}
-                name={pokemon.name}
-                types={pokemon.types}
-              />
-            );
-          })}
+        <h1>Pokedex Kanto</h1>
+        <div className="bodyPokedex">
+          {pokemonsList &&
+            pokemonsList.map((pokemon) => {
+              return (
+                <PokemonCard
+                  id={pokemon.id}
+                  name={pokemon.name}
+                  types={pokemon.types}
+                />
+              );
+            })}
+        </div>
       </div>
     </div>
   );

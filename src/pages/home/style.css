@@ -11,20 +11,21 @@
   display: flex;
   width: 90%;
   margin: auto;
-  margin-top: 38.2rem;
-  padding: 4rem 10.1rem 4.1rem 10.1rem;
-  align-items: center;
+  margin-top: 29rem;
+  padding-top: 7rem;
+  height: 66.8rem;
+  margin-bottom: 2rem;
 }
 .boxCard {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  width: 46%;
+  width: 55%;
+  height: 50%;
   gap: 1rem;
 }
 
 .boxPokemon {
-  margin-left: 39rem;
-  margin-top: 15rem;
+  padding-left: 12rem;
+  align-self: flex-end;
 }
