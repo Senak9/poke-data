@@ -3,7 +3,10 @@ import "./style.css";
 export default function Header() {
   return (
     <div className="containerHeader">
-      <h1>Pokemon</h1>
+      <div className="titleHeader">
+        <h1>Pokemon</h1>
+      </div>
+
       <div className="boxHeader">
         <h2>Home</h2>
         <h2>Pokédex</h2>

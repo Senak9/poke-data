@@ -14,4 +14,6 @@
   margin-top: 38.2rem;
   padding: 4rem 10.1rem 4.1rem 10.1rem;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
