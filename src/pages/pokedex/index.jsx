@@ -43,6 +43,7 @@ export default function Pokedex() {
                   id={pokemon.id}
                   name={pokemon.name}
                   types={pokemon.types}
+                  pTypes={pokemon.types.map((typeInfo) => typeInfo.type.name)}
                 />
               );
             })}
