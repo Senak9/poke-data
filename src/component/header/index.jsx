@@ -1,6 +1,9 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
+
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <div className="containerHeader">
       <div className="titleHeader">
@@ -8,8 +11,20 @@ export default function Header() {
       </div>
 
       <div className="boxHeader">
-        <h2>Home</h2>
-        <h2>Pokédex</h2>
+        <h2
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Home
+        </h2>
+        <h2
+          onClick={() => {
+            navigate("/pokedex");
+          }}
+        >
+          Pokédex
+        </h2>
         <h2>Moves</h2>
         <h2>Evolution</h2>
         <h2>Locations</h2>

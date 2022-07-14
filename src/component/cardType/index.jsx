@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 export default function CardType({ status }) {
-  console.log(status);
+  const navigate = useNavigate();
+
   return (
     <div
       className={
@@ -14,6 +16,9 @@ export default function CardType({ status }) {
           ? "evolutionBox containerCardType"
           : "locationsBox containerCardType"
       }
+      onClick={() => {
+        navigate(status === "pokedex" ? "/pokedex" : "/");
+      }}
     >
       <h1>
         {status === "pokedex"
@@ -24,6 +29,22 @@ export default function CardType({ status }) {
           ? "Evolution"
           : "Locations"}
       </h1>
+
+      {/* {status === "pokedex" ? (
+        <div
+          onClick={() => {
+            navigate("/pokedex");
+          }}
+        >
+          Pokedex{" "}
+        </div>
+      ) : status === "moves" ? (
+        <div>Moves </div>
+      ) : status === "evolution" ? (
+        <div> Evolution</div>
+      ) : (
+        <div>Locations </div>
+      )} */}
     </div>
   );
 }

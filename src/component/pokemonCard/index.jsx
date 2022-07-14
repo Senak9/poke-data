@@ -20,8 +20,6 @@ export default function PokemonCard({ id, name, types, pTypes }) {
       <h1>
         {id} {name}
       </h1>
-      {/* <h2 className={`typePokemon ${types[0].type.name}`}>
-        {pTypes.join(" | ")} </h2>;*/}
 
       {pTypes[1] ? (
         <div className="boxTypePokemon">
