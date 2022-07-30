@@ -2,16 +2,16 @@ import React from "react";
 import Header from "../../component/header";
 import "./style.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import ModalPokemon from "../../component/modalPokemon";
 import api from "../../api/api";
 import PokemonCard from "../../component/pokemonCard";
 
 export default function Pokedex() {
   const [pokemonsList, setPokemonsList] = useState([]);
-  // const pokemonList = [];
 
   const getPokemonUrl = async (id) => {
     const response = await api.get(`/pokemon/${id}`);
-    // console.log(response.data);
     return response.data;
   };
 
@@ -19,8 +19,6 @@ export default function Pokedex() {
     const list = [];
     for (let i = 1; i <= 151; i++) {
       const pokemon = await getPokemonUrl(i);
-      // setPokemonsList([...pokemonsList, pokemon]);
-      // pokemonList.push(pokemon);
       list.push(pokemon);
     }
 
@@ -28,7 +26,6 @@ export default function Pokedex() {
   };
 
   listPokemon();
-  console.log(pokemonsList);
 
   return (
     <div className="containerPokedex">
@@ -44,6 +41,8 @@ export default function Pokedex() {
                   name={pokemon.name}
                   types={pokemon.types}
                   pTypes={pokemon.types.map((typeInfo) => typeInfo.type.name)}
+                  // handleCloseModalPokemon={handleCloseModalPokemon}
+                  // handleOpenModalPokemon={handleOpenModalPokemon}
                 />
               );
             })}

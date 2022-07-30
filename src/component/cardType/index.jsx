@@ -29,22 +29,6 @@ export default function CardType({ status }) {
           ? "Evolution"
           : "Locations"}
       </h1>
-
-      {/* {status === "pokedex" ? (
-        <div
-          onClick={() => {
-            navigate("/pokedex");
-          }}
-        >
-          Pokedex{" "}
-        </div>
-      ) : status === "moves" ? (
-        <div>Moves </div>
-      ) : status === "evolution" ? (
-        <div> Evolution</div>
-      ) : (
-        <div>Locations </div>
-      )} */}
     </div>
   );
 }

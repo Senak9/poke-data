@@ -3,7 +3,7 @@ import Header from "../../component/header";
 import CardType from "../../component/cardType";
 import "./style.css";
 import PokemonHome from "../../assets/pokemonHome.svg";
-
+import ModalPokemon from "../../component/modalPokemon";
 export default function Home() {
   return (
     <div className="containerHome">

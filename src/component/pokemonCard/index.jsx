@@ -1,10 +1,22 @@
 import React from "react";
 import "./style.css";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import ModalPokemon from "../modalPokemon";
 
 export default function PokemonCard({ id, name, types, pTypes }) {
-  console.log(`types?`, types);
+  const [showModalPokemon, setShowModalPokemon] = useState(false);
+
+  function handleOpenModalPokemon() {
+    console.log(showModalPokemon);
+    setShowModalPokemon(true);
+  }
+
+  function handleCloseModalPokemon() {
+    setShowModalPokemon(false);
+  }
   return (
-    <div className={`card`}>
+    <div className={`card`} onClick={handleOpenModalPokemon()}>
       <div className={`boxImage ${types[0].type.name}`}>
         {/* <img
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
@@ -33,6 +45,12 @@ export default function PokemonCard({ id, name, types, pTypes }) {
       )}
       {/* <h2 className={`typePokemon ${pTypes[0]}`}>{pTypes[0]}</h2>
                 <h2 className={`typePokemon ${pTypes[1]}`}>{pTypes[1]}</h2> */}
+      {showModalPokemon && (
+        <ModalPokemon
+        // handleOpenModalPokemon={handleOpenModalPokemon}
+        // handleCloseModalPokemon={handleCloseModalPokemon}
+        />
+      )}
     </div>
   );
 }

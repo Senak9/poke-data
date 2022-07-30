@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import reportWebVitals from "./reportWebVitals";
 import Pokedex from "./pages/pokedex";
 import MainRoutes from "./routes/index";
+import ModalPokemon from "./component/modalPokemon";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
